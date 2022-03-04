@@ -1,20 +1,10 @@
-module.exports.isprime=function (a) {
-    var i;
-    for(i=2;i<=(a/2);i++){
-        if(a%i==0){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
+var f=require('./primenumber');
+var x=3;
+if(f.isprime(x)){
+    console.log(x+" is not prime number");
 }
-module.exports.reverse=function(x){
-    var s=x.toString();
-    var rev="";
-    for(var index=x.length-1;index>-1;index--){
-        rev+=x[index];
-
-    }
-    return(rev);
+else{
+    console.log(x+" is prime number")
 }
+var myname="harsh";
+console.log("Reverse of "+myname+" is "+f.reverse(myname));
