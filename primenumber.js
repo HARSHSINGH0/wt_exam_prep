@@ -9,3 +9,12 @@ module.exports.isprime=function (a) {
         }
     }
 }
+module.exports.reverse=function(x){
+    var s=x.toString();
+    var rev="";
+    for(var index=x.length-1;index>-1;index--){
+        rev+=x[index];
+
+    }
+    return(rev);
+}
